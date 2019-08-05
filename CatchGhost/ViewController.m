@@ -279,7 +279,7 @@ typedef enum: NSUInteger {
 - (void)starGame:(id)sender
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"你怕不是个傻的吧" message:@"" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"兑兑！奖得兑！" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"行！是我傻🤪" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     [alert addAction:action];
