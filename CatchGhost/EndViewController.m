@@ -62,18 +62,18 @@
     }];
 
     [self.giveUpChance mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.tipLabel.mas_bottom).offset(20);
-        make.left.equalTo(self.view).offset(50);
+        make.top.equalTo(self.view.mas_top).offset(200);
+        make.left.equalTo(self.view).offset(80);
     }];
 
     [self.reduceBecomGhost mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.tipLabel.mas_bottom).offset(20);
-        make.right.lessThanOrEqualTo(self.view).offset(-50);
+        make.top.equalTo(self.view.mas_top).offset(200);
+        make.right.lessThanOrEqualTo(self.view).offset(-80);
     }];
 
     [self.reduceTip mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.giveUpChance.mas_bottom).offset(5);
-        make.left.equalTo(self.view).offset(50);
+        make.bottom.equalTo(self.giveUpChance.mas_top).offset(-5);
+        make.left.equalTo(self.view).offset(80);
     }];
 }
 
