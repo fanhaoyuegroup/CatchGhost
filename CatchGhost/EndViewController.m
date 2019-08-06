@@ -90,7 +90,7 @@
     }];
     
     [self.pingminTxt mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.view).offset(-50);
+        make.bottom.equalTo(self.view).offset(-100);
         make.centerX.equalTo(self.view);
         make.width.mas_equalTo(150);
     }];
@@ -148,7 +148,7 @@
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:NULL];
     
-    UIAlertAction *suerAction = [UIAlertAction actionWithTitle:@"头出" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *suerAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
         //TODO :  判定
         NSString *normalTitle = [longPressBtn titleForState:UIControlStateNormal];
@@ -346,7 +346,7 @@
         _giveUpChance.layer.masksToBounds = YES;
         _giveUpChance.layer.cornerRadius = 20;
         [_giveUpChance setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_giveUpChance setTitle:@"我要当👻" forState:UIControlStateNormal];
+        [_giveUpChance setTitle:@"我想当👻" forState:UIControlStateNormal];
         [_giveUpChance setBackgroundColor:[UIColor colorWithRed:246/255.0 green:87/255.0 blue:61/255.0 alpha:1]];
         _giveUpChance.titleLabel.font = [UIFont systemFontOfSize:18];
         [_giveUpChance addTarget:self action:@selector(reduceBecomGhostClick) forControlEvents:UIControlEventTouchUpInside];
