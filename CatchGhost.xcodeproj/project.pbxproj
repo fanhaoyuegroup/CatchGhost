@@ -11,6 +11,7 @@
 		04EE999A200377B200B238D5 /* CAEmitterLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE9996200377B200B238D5 /* CAEmitterLayerView.m */; };
 		04EE999B200377B200B238D5 /* demoHitEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE9999200377B200B238D5 /* demoHitEventView.m */; };
 		831503251FBD637500CA5727 /* EndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831503241FBD637500CA5727 /* EndViewController.m */; };
+		838A7C8022F9874400085B2E /* ViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A7C7F22F9874400085B2E /* ViewHelper.m */; };
 		839767B21F8CE037007D69A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 839767B11F8CE037007D69A1 /* AppDelegate.m */; };
 		839767B51F8CE037007D69A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839767B41F8CE037007D69A1 /* ViewController.m */; };
 		839767B81F8CE037007D69A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839767B61F8CE037007D69A1 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 		2094CE9500D7C8B0999F5029 /* Pods-CatchGhost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchGhost.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatchGhost/Pods-CatchGhost.debug.xcconfig"; sourceTree = "<group>"; };
 		831503231FBD637500CA5727 /* EndViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndViewController.h; sourceTree = "<group>"; };
 		831503241FBD637500CA5727 /* EndViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndViewController.m; sourceTree = "<group>"; };
+		838A7C7E22F9874400085B2E /* ViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHelper.h; sourceTree = "<group>"; };
+		838A7C7F22F9874400085B2E /* ViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHelper.m; sourceTree = "<group>"; };
 		839767AD1F8CE037007D69A1 /* CatchGhost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchGhost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839767B01F8CE037007D69A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		839767B11F8CE037007D69A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,9 +108,19 @@
 			path = snow;
 			sourceTree = "<group>";
 		};
+		838A7C7D22F9871F00085B2E /* ViewHelper */ = {
+			isa = PBXGroup;
+			children = (
+				838A7C7E22F9874400085B2E /* ViewHelper.h */,
+				838A7C7F22F9874400085B2E /* ViewHelper.m */,
+			);
+			path = ViewHelper;
+			sourceTree = "<group>";
+		};
 		839767A41F8CE037007D69A1 = {
 			isa = PBXGroup;
 			children = (
+				838A7C7D22F9871F00085B2E /* ViewHelper */,
 				839767AF1F8CE037007D69A1 /* CatchGhost */,
 				839767C81F8CE037007D69A1 /* CatchGhostTests */,
 				839767D31F8CE037007D69A1 /* CatchGhostUITests */,
@@ -342,6 +355,7 @@
 				04EE999A200377B200B238D5 /* CAEmitterLayerView.m in Sources */,
 				04EE999B200377B200B238D5 /* demoHitEventView.m in Sources */,
 				839767B51F8CE037007D69A1 /* ViewController.m in Sources */,
+				838A7C8022F9874400085B2E /* ViewHelper.m in Sources */,
 				839767C01F8CE037007D69A1 /* main.m in Sources */,
 				839767B21F8CE037007D69A1 /* AppDelegate.m in Sources */,
 			);

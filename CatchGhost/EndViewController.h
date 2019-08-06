@@ -12,8 +12,12 @@
 
 @property (nonatomic, strong) NSMutableArray *sortedArray;
 
+@property (nonatomic, assign) NSInteger farmerNum;
+
+@property (nonatomic, assign) NSInteger ghostNum;
+
 @property (nonatomic, copy) NSString *farmer;
 
-@property (nonatomic, copy) NSString *stupid;
+@property (nonatomic, copy) NSString *ghost;
 
 @end

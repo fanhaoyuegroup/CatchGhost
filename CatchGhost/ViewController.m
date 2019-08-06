@@ -60,6 +60,10 @@ typedef enum: NSUInteger {
 @property (nonatomic, assign)GameType  gameType;
 @property (nonatomic, assign)WhichMoreType  whichMoreType;
 
+@property (nonatomic, assign) NSInteger ghostNum;
+@property (nonatomic, assign) NSInteger farmerNum;
+
+@property (nonatomic, copy) NSString *ghostStr;
 @end
 
 @implementation ViewController
@@ -69,6 +73,7 @@ typedef enum: NSUInteger {
     self.gameType = mGameType;
     self.whichMoreType = GhostMore;
     //self.title = @"捉👻";
+    self.ghostStr = @"👻";
     if (self.whichMoreType == SillyBmore) {
         self.navigationItem.title = @"捉👻（多傻瓜模式）";
     } else {
@@ -305,8 +310,10 @@ typedef enum: NSUInteger {
         
         EndViewController *endVC = [[EndViewController alloc] init];
         endVC.sortedArray = [self configureArrayWithAllInfo];
+        endVC.farmerNum = self.farmerNum;
+        endVC.ghostNum = self.ghostNum;
         endVC.farmer = self.pingminTxt.text;
-        endVC.stupid = self.shaziTxt.text;
+        endVC.ghost = self.ghostStr;
         [self.navigationController pushViewController:endVC animated:YES];
     }
 }
@@ -329,6 +336,9 @@ typedef enum: NSUInteger {
         ghostNum = peopleAllNum - nongMinNum - sillyBNum;
     }
     
+    self.ghostNum = ghostNum;
+    self.farmerNum = nongMinNum;
+    
     for (int i=0; i<nongMinNum; i++) {
         [niubilityArray addObject:self.pingminTxt.text];
     }
@@ -336,7 +346,7 @@ typedef enum: NSUInteger {
         [niubilityArray addObject:self.shaziTxt.text];
     }
     for (int k=0; k<ghostNum; k++) {
-        [niubilityArray addObject:@"👻"];
+        [niubilityArray addObject:self.ghostStr];
     }
     return niubilityArray;
 }
