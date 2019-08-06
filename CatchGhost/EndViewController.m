@@ -385,8 +385,8 @@
 {
     if (!_pingminLab) {
         _pingminLab = [UILabel new];
-        _pingminLab.text = @"👨‍🌾词:";
-        _pingminLab.textColor = [UIColor blackColor];
+        _pingminLab.text = @"平民词:";
+        _pingminLab.textColor = [UIColor whiteColor];
         _pingminLab.font = [UIFont systemFontOfSize:18];
         
     }
