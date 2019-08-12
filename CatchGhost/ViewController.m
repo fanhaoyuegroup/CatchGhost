@@ -468,9 +468,9 @@ typedef enum: NSUInteger {
         _peopleButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _peopleButton.layer.masksToBounds = YES;
         _peopleButton.layer.cornerRadius = 3;
-        _peopleButton.layer.borderColor = [UIColor grayColor].CGColor;
+        _peopleButton.layer.borderColor = [UIColor whiteColor].CGColor;
         _peopleButton.layer.borderWidth = 1;
-        [_peopleButton setBackgroundColor:[UIColor grayColor]];
+        [_peopleButton setBackgroundColor:[UIColor whiteColor]];
         [_peopleButton setTitleColor:[UIColor blackColor] forState:0];
         [_peopleButton setTitle:@"选择" forState:UIControlStateNormal];
         [_peopleButton addTarget:self action:@selector(selectNum:) forControlEvents:UIControlEventTouchUpInside];
@@ -517,9 +517,9 @@ typedef enum: NSUInteger {
 {
     if (!_pingminTxt) {
         _pingminTxt = [UITextField new];
-        _pingminTxt.backgroundColor = [UIColor grayColor];
+        _pingminTxt.backgroundColor = [UIColor whiteColor];
         _pingminTxt.keyboardType = UIKeyboardTypeDefault;
-        _pingminTxt.textColor = [UIColor whiteColor];
+        _pingminTxt.textColor = [UIColor blackColor];
     }
     return _pingminTxt;
 }
@@ -528,9 +528,9 @@ typedef enum: NSUInteger {
 {
     if (!_shaziTxt) {
         _shaziTxt = [UITextField new];
-        _shaziTxt.backgroundColor = [UIColor grayColor];
+        _shaziTxt.backgroundColor = [UIColor whiteColor];
         _shaziTxt.keyboardType = UIKeyboardTypeDefault;
-        _shaziTxt.textColor = [UIColor whiteColor];
+        _shaziTxt.textColor = [UIColor blackColor];
     }
     return _shaziTxt;
 }
@@ -555,7 +555,7 @@ typedef enum: NSUInteger {
         _submitButton.layer.cornerRadius = 4;
         [_submitButton setBackgroundColor:[UIColor redColor]];
         [_submitButton setTitle:@"开始👏👏👏" forState:UIControlStateNormal];
-        [_submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_submitButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_submitButton addTarget:self action:@selector(starGame:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _submitButton;
