@@ -332,9 +332,9 @@
         _tipLabel = [[UILabel alloc] init];
         _tipLabel.text = @"按顺序查看，看完记得把词翻回来，不翻是🐶";
         _tipLabel.numberOfLines = 0;
-        _tipLabel.textColor = [UIColor blackColor];
+        _tipLabel.textColor = [UIColor whiteColor];
         _tipLabel.textAlignment = NSTextAlignmentCenter;
-        _tipLabel.font = [UIFont systemFontOfSize:13];
+        _tipLabel.font = [UIFont systemFontOfSize:15];
         _tipLabel.hidden = YES;
     }
     return _tipLabel;
@@ -372,9 +372,9 @@
     if (!_reduceTip) {
         _reduceTip = [[UILabel alloc] init];
         _reduceTip.text = @"首位玩家特权：是否降低当👻的概率";
-        _reduceTip.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
+        _reduceTip.textColor = [[UIColor whiteColor] colorWithAlphaComponent:1.0];
         _reduceTip.textAlignment = NSTextAlignmentLeft;
-        _reduceTip.font = [UIFont systemFontOfSize:13];
+        _reduceTip.font = [UIFont systemFontOfSize:15];
         _reduceTip.numberOfLines = 0;
     }
     return _reduceTip;
